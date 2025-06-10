@@ -1,0 +1,193 @@
+* {   /* Elimina márgenes y rellenos por defecto en todos los elementos, y mejora el control del tamaño usando border-box*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}  
+
+body {  
+  background-color: #fefdf9;
+  color: #333;
+  line-height: 1.6; /*Mejora la legibilidad del texto */
+  background-image: url('files/fondo-page.jpg');
+  background-repeat: no-repeat;
+}
+
+/* - - -  Cabecera - - - - */
+
+header {
+  background-color: #81bbcd;/*marco azul y borde redondeado a la cabecera.*/
+  padding: 16px 16px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+nav {
+  background-image: url('files/fondo-nav.jpg'); /*imagen de fondo completa y centrada para la barra de navegación.*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex; /*flexbox para centrar el texto vertical y horizontalmente.*/
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-text {
+  font-family: 'Cinzel', serif;/* vincula a google*/
+  color: #ffffff;
+  font-size: 43px;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* - - - Bloque cita y Subtitulo - - - */
+
+.main-subtitle {
+  padding: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.main-subtitle {
+  width: 60%; 
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #81bbcd;
+  text-align: center;
+  font-family: Georgia, serif;
+  border-radius: 8px;
+  color:rgb(255, 255, 255);
+}
+
+blockquote {  /*Cita destacada con fondo azul, línea vertical izquierda y estilo cursiva+negrita*/
+  background: #81bbcd;
+  text-align: center;
+  border-left: 4px solid #035f69; /*línea izquierda cita*/
+  margin: 1.5em 10px;
+  padding: 1em 20px;
+  color: #035f69;
+  font-family: Georgia, serif;
+  text-shadow: none;
+  font-style: italic;/* para enfatizar cursiva*/
+  font-weight: bold;
+}
+
+/* - - -Tarjetas - - -  */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1rem;  /* gap-espacio entre filas y columnas, y el padding, mejoran la separación y el espaciado.*/
+  padding: 2rem;
+  justify-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px; /*Usa perspective para dar sensación de profundidad.*/
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-content { /*efecto "volteo en 3D" al pasar el ratón*/
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-extra {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-front {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card-front img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-front h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.card-extra {
+  background-color: #f2f6f7;
+  transform: rotateY(180deg);
+  padding: 1rem;
+  overflow-y: auto; /*desplazamiento con scroll vertical*/
+  scrollbar-color: #81bbcd #bcdfe8; /*color barra que se desliza y despues la de fondo del scroll*/
+  scrollbar-width: thin;/*ancho*/
+}
+
+
+.card-extra img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card-text h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text p {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  text-align: justify;
+}
+
+/* - - - footer - - - */
+
+footer {
+  background-color: #135c72;
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr; /*cambia de 2 a una carta por fila*/
+  }
+
+  .card {
+    width: 90%;
+    height: 450px;
+  }
+
+  .main-subtitle h2 {
+    font-size: 1.2rem;
+  }
+
+
+}
