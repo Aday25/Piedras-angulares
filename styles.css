@@ -8,7 +8,7 @@ body {
   background-color: #fefdf9;
   color: #333;
   line-height: 1.6; /*Mejora la legibilidad del texto */
-  background-image: url('files/fondo-page.jpg');
+  background-image: url('files/background-body.jpg');
   background-repeat: no-repeat;
 }
 
@@ -22,7 +22,7 @@ header {
 }
 
 nav {
-  background-image: url('files/fondo-nav.jpg'); /*imagen de fondo completa y centrada para la barra de navegación.*/
+  background-image: url('files/background-nav.jpg'); /*imagen de fondo completa y centrada para la barra de navegación.*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -184,14 +184,6 @@ footer {
     width: 90%;
     height: 450px;
   }
-
-  body {  
-  background-color: #fefdf9;
-  color: #333;
-  line-height: 1.6; /*Mejora la legibilidad del texto */
-  background-image: url('files/fondo-page.jpg');
-  background-repeat: repeat;
-}
 
   .main-subtitle h2 {
     font-size: 1.2rem;
