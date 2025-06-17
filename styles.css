@@ -185,6 +185,14 @@ footer {
     height: 450px;
   }
 
+  body {  
+  background-color: #fefdf9;
+  color: #333;
+  line-height: 1.6; /*Mejora la legibilidad del texto */
+  background-image: url('files/fondo-page.jpg');
+  background-repeat: repeat;
+}
+
   .main-subtitle h2 {
     font-size: 1.2rem;
   }
