@@ -170,9 +170,19 @@ footer {
   text-align: center;
 }
 
-.footer-content p {
-  margin: 0.5rem 0;
-  font-size: 1rem;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  font-family: 'Cinzel', serif;
+}
+
+.logo-footer {
+  width: 120px; /* Ajusta si quieres más grande o pequeño */
+  height: auto;
+  object-fit: contain;
 }
 
 @media (max-width: 768px) {
