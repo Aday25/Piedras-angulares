@@ -166,7 +166,7 @@ blockquote {  /*Cita destacada con fondo azul, línea vertical izquierda y estil
 footer {
   background-color: #135c72;
   color: #ffffff;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem; /* menos espacio arriba y abajo */
   text-align: center;
 }
 
@@ -174,14 +174,20 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  padding: 20px 0;
+  gap: 5px;           /* menos separación entre elementos */
+  padding: 10px 0;    /* menos padding interno */
+}
+
+footer p {
+  margin: 0.2rem 0;   /* margen pequeño para los párrafos */
 }
 
 .logo-footer {
-  width: 70px; /* Ajusta si quieres más grande o pequeño */
+  width: 70px;
   height: auto;
   object-fit: contain;
+  display: block;     /* elimina espacio extra debajo de la imagen */
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
