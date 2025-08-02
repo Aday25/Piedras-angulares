@@ -176,11 +176,10 @@ footer {
   align-items: center;
   gap: 10px;
   padding: 20px 0;
-  font-family: 'Cinzel', serif;
 }
 
 .logo-footer {
-  width: 120px; /* Ajusta si quieres más grande o pequeño */
+  width: 70px; /* Ajusta si quieres más grande o pequeño */
   height: auto;
   object-fit: contain;
 }
