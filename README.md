@@ -112,7 +112,8 @@ El objetivo era conseguir un sitio funcional, estético y educativo solo con HTM
 │   ├── image2.png
 │   ├── logo.png
 │   └── ...
-└── README.md```
+└── README.md
+```
 
 
 ---
