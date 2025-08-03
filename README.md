@@ -128,7 +128,4 @@ Las imágenes de fondo usadas en `<nav>` y `<body>` son libres y obtenidas de [U
 
 ## Logo
 
-Al final del README puedes incluir tu logo personal con:
-
-```md
-![Logo de Aday](./logo.png)
+![Logo del proyecto](files/logo.png)
