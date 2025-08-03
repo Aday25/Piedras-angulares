@@ -1,13 +1,15 @@
-* {   /* Elimina márgenes y rellenos por defecto en todos los elementos, y mejora el control del tamaño usando border-box*/
+* {
+  /* Elimina márgenes y rellenos por defecto en todos los elementos, y mejora el control del tamaño usando border-box*/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}  
+}
 
-body {  
+body {
   background-color: #fefdf9;
   color: #333;
-  line-height: 1.6; /*Mejora la legibilidad del texto */
+  line-height: 1.6;
+  /*Mejora la legibilidad del texto */
   background-image: url('files/background-body.jpg');
   background-repeat: no-repeat;
 }
@@ -15,25 +17,29 @@ body {
 /* - - -  Cabecera - - - - */
 
 header {
-  background-color: #81bbcd;/*marco azul y borde redondeado a la cabecera.*/
+  background-color: #81bbcd;
+  /*marco azul y borde redondeado a la cabecera.*/
   padding: 16px 16px;
   text-align: center;
   border-radius: 6px;
 }
 
 nav {
-  background-image: url('files/background-nav.jpg'); /*imagen de fondo completa y centrada para la barra de navegación.*/
+  background-image: url('files/background-nav.jpg');
+  /*imagen de fondo completa y centrada para la barra de navegación.*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 200px;
-  display: flex; /*flexbox para centrar el texto vertical y horizontalmente.*/
+  display: flex;
+  /*flexbox para centrar el texto vertical y horizontalmente.*/
   align-items: center;
   justify-content: center;
 }
 
 .nav-text {
-  font-family: 'Cinzel', serif;/* vincula a google*/
+  font-family: 'Cinzel', serif;
+  /* vincula a google*/
   color: #ffffff;
   font-size: 43px;
   letter-spacing: 2px;
@@ -50,26 +56,29 @@ nav {
 }
 
 .main-subtitle {
-  width: 60%; 
+  width: 60%;
   margin: 2rem auto;
   padding: 1rem;
   background: #81bbcd;
   text-align: center;
   font-family: Georgia, serif;
   border-radius: 8px;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
-blockquote {  /*Cita destacada con fondo azul, línea vertical izquierda y estilo cursiva+negrita*/
+blockquote {
+  /*Cita destacada con fondo azul, línea vertical izquierda y estilo cursiva+negrita*/
   background: #81bbcd;
   text-align: center;
-  border-left: 4px solid #035f69; /*línea izquierda cita*/
+  border-left: 4px solid #035f69;
+  /*línea izquierda cita*/
   margin: 1.5em 10px;
   padding: 1em 20px;
   color: #035f69;
   font-family: Georgia, serif;
   text-shadow: none;
-  font-style: italic;/* para enfatizar cursiva*/
+  font-style: italic;
+  /* para enfatizar cursiva*/
   font-weight: bold;
 }
 
@@ -78,7 +87,8 @@ blockquote {  /*Cita destacada con fondo azul, línea vertical izquierda y estil
 .cards-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem 1rem;  /* gap-espacio entre filas y columnas, y el padding, mejoran la separación y el espaciado.*/
+  gap: 2rem 1rem;
+  /* gap-espacio entre filas y columnas, y el padding, mejoran la separación y el espaciado.*/
   padding: 2rem;
   justify-items: center;
 }
@@ -86,7 +96,8 @@ blockquote {  /*Cita destacada con fondo azul, línea vertical izquierda y estil
 .card {
   width: 300px;
   height: 400px;
-  perspective: 1000px; /*Usa perspective para dar sensación de profundidad.*/
+  perspective: 1000px;
+  /*Usa perspective para dar sensación de profundidad.*/
 }
 
 .card-content {
@@ -97,7 +108,8 @@ blockquote {  /*Cita destacada con fondo azul, línea vertical izquierda y estil
   transform-style: preserve-3d;
 }
 
-.card:hover .card-content { /*efecto "volteo en 3D" al pasar el ratón*/
+.card:hover .card-content {
+  /*efecto "volteo en 3D" al pasar el ratón*/
   transform: rotateY(180deg);
 }
 
@@ -137,9 +149,12 @@ blockquote {  /*Cita destacada con fondo azul, línea vertical izquierda y estil
   background-color: #f2f6f7;
   transform: rotateY(180deg);
   padding: 1rem;
-  overflow-y: auto; /*desplazamiento con scroll vertical*/
-  scrollbar-color: #81bbcd #bcdfe8; /*color barra que se desliza y despues la de fondo del scroll*/
-  scrollbar-width: thin;/*ancho*/
+  overflow-y: auto;
+  /*desplazamiento con scroll vertical*/
+  scrollbar-color: #81bbcd #bcdfe8;
+  /*color barra que se desliza y despues la de fondo del scroll*/
+  scrollbar-width: thin;
+  /*ancho*/
 }
 
 
@@ -163,10 +178,11 @@ blockquote {  /*Cita destacada con fondo azul, línea vertical izquierda y estil
 
 /* - - - footer - - - */
 
+/* Footer general */
 footer {
   background-color: #135c72;
   color: #ffffff;
-  padding: 1rem 2rem; /* menos espacio arriba y abajo */
+  padding: 1rem 2rem;
   text-align: center;
 }
 
@@ -174,25 +190,89 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;           /* menos separación entre elementos */
-  padding: 10px 0;    /* menos padding interno */
+  gap: 8px;
+  padding: 10px 0;
 }
 
-footer p {
-  margin: 0.2rem 0;   /* margen pequeño para los párrafos */
+.footer-content p {
+  margin: 0;
+  font-size: 1rem;
 }
 
+/* Línea de copyright + contactos */
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+/* Separadores | */
+.footer-line a:not(:last-child)::after {
+  content: "|";
+  margin-left: 8px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Enlaces con iconos y texto */
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Iconos SVG */
+.icon-link svg {
+  fill: currentColor;
+}
+
+/* Colores específicos para cada enlace */
+.icon-link.github {
+  color: #fff;
+  /* blanco */
+}
+
+.icon-link.github:hover {
+  color: #bbbbbb;
+}
+
+.icon-link.linkedin {
+  color: #0a66c2;
+  /* azul LinkedIn */
+}
+
+.icon-link.linkedin:hover {
+  color: #62a2f7;
+}
+
+.icon-link.email-icon {
+  color: #f58c1f;
+  /* naranja */
+}
+
+.icon-link.email-icon:hover {
+  color: #ffb74d;
+}
+
+/* Logo footer */
 .logo-footer {
   width: 70px;
   height: auto;
   object-fit: contain;
-  display: block;     /* elimina espacio extra debajo de la imagen */
-  margin: 0 auto;
+  margin-top: 12px;
 }
+
 
 @media (max-width: 768px) {
   .cards-container {
-    grid-template-columns: 1fr; /*cambia de 2 a una carta por fila*/
+    grid-template-columns: 1fr;
+    /*cambia de 2 a una carta por fila*/
   }
 
   .card {
@@ -204,5 +284,18 @@ footer p {
     font-size: 1.2rem;
   }
 
+  .footer-line {
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 0.9rem;
+  }
 
+  .footer-line a:not(:last-child)::after {
+    margin-left: 5px;
+  }
+
+  .logo-footer {
+    width: 60px;
+    margin-top: 10px;
+  }
 }
