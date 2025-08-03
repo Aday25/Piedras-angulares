@@ -104,22 +104,16 @@ El objetivo era conseguir un sitio funcional, estético y educativo solo con HTM
 
 ## Estructura de carpetas del proyecto
 
-piedras-angulares/
-│
-├── index.html # Archivo principal HTML
-├── css/
-│ └── styles.css # Estilos CSS del proyecto
-├── images/
-│ ├── maude1.png
-│ ├── maude2.png
-│ ├── honor1.png
-│ ├── honor2.png
-│ ├── irene1.png
-│ ├── irene2.png
-│ ├── roberta1.png
-│ └── roberta2.png
-├── logo.png # Tu logo personal
-└── README.md # Este archivo
+```piedras-angulares/
+├── index.html
+├── styles.css
+├── files/
+│   ├── image1.png
+│   ├── image2.png
+│   ├── logo.png
+│   └── ...
+└── README.md```
+
 
 ---
 
