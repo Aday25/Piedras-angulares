@@ -126,8 +126,6 @@ Las imágenes de fondo usadas en `<nav>` y `<body>` son libres y obtenidas de [U
 
 ---
 
-## Logo
-.
 <p align="center">
   <img src="files/logo.png" alt="Logo del proyecto" width="120">
 </p>
