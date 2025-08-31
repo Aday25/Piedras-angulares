@@ -199,6 +199,14 @@ footer {
   font-size: 1rem;
 }
 
+.factoria {
+  color: orange;
+}
+
+.factoria:hover{
+  color:rgb(242, 255, 0);
+}
+
 /* Línea de copyright + contactos */
 .footer-line {
   display: flex;
